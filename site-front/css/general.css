@@ -6,26 +6,46 @@
 
 
 body {
-    background-color: #A0A603;
+    /* background-color: #A0A603;
     background-color: #025959;
-    background-color: #04BFBF;
     background-color: #04ADBF;
-    background-color: #F2E0C9;
+    background-color: #04BFBF; */
+    background-color: #f2e0c9c5;
 
 }
-
 
 .container {
-    background-color: #04ADBF;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 0px;
-    font-size: 25px;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+/* criando o Header */
+header {
+    background-color: #04BFBF;
     box-shadow: 0px 0px 4px #000;
-    color: #A0A603;
+    border-bottom: 3px solid #025959;
+
+    font-family: Arial, Helvetica, sans-serif;
+    height: 130px;
+    
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+    
+}
+
+header img {
+    width: 100px;
+    margin: 0px 15px;
+    
 }
 
 
-h1 {
-    text-shadow: 0px 0px 4px #000;
+header h2 {
+    font-size: 25px;
+    color: white;
+    
+    /* aumentar a fonte para maiuscula */
+    text-transform: uppercase;
+
 }
