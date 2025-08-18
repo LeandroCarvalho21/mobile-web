@@ -1,0 +1,188 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(170, 169, 169);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.site {
+    color: rgb(4, 0, 255);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.685);
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px 0px;
+    border-radius: 8px;
+    background-color: rgba(250, 235, 215, 0.37);
+    margin-bottom: 50px;
+}
+
+marquee {
+    margin-top: 30px;
+}
+
+.tags {
+    background-color: rgba(128, 255, 0, 0.459);
+    box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.404);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 16px;
+    margin: 16px;
+    display: grid;
+    gap: 20px;
+}
+
+
+h2 {
+    
+    padding: 15px;
+    margin: 5px 0px;
+}
+
+h3 {
+    border: 3px dotted rgb(0, 17, 255);
+    padding: 15px;
+    margin: 5px 0px;
+}
+
+h4 {
+    border: 3px double red;
+    padding: 15px;
+    margin: 5px 0px;
+}
+
+
+h5 {
+    border: 4px solid red;
+    padding: 15px;
+    margin: 5px 0px;
+
+
+}
+
+h6 {
+    color: brown;
+    text-shadow: 0px 0px 4px rgba(46, 44, 44, 0.664);
+    font-size: 2.5rem;
+
+}
+
+.t4 {
+    margin-bottom: 20px;
+    color: rgb(206, 11, 11);
+    border: 2px solid rgb(255, 0, 55);
+    border-radius: 25px;
+    padding: 10px;
+
+}
+
+.displayInline {
+    background-color: aqua;
+    box-shadow: 0px 0px 4px rgb(4, 0, 255);
+    border-radius: 15px;
+    padding: 32px;
+}
+
+.displayBlock {
+    background-color: aquamarine;
+    box-shadow: 0px 0px 4px rgb(0, 110, 255);
+    border-radius: 15px;
+    padding: 32px;
+}
+
+strong {
+    color: rgb(255, 51, 0);
+}
+
+small {
+    color: brown;
+}
+
+span {
+    color: darkorchid;
+}
+
+.logo {
+    text-align: center;
+    padding: 32px;
+}
+
+img {
+    border-radius: 50%;
+    border: 8px double #bd2a0596;
+    box-shadow: 0px 0px 32px rgba(255, 0, 0, 0.705);
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+
+}
+
+a:hover {
+    color: black;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+.h1-pagina-contatos {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.links-contato {
+    background-color: #B5B5B5;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-bottom: 30px;
+
+}
+
+.logo-whats {
+    width: 40px;
+    border: none;
+    box-shadow: none;
+    display: flex;
+
+
+
+
+}
+
+.listas-ul-ol {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+    gap: 10px;
+    margin: 10px 0px ;
+
+
+}
+
+.lista-ordenada,
+.lista-nao-ordenada {
+
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0.185);
+    padding: 16px;
+    box-shadow: 0px 0px 4px black;
+
+}

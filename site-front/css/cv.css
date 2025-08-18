@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(170, 169, 169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    max-width: 900px;
+
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+    margin: 32px;
+    height: 1000px;
+
+
+}
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgb(37, 37, 37);
+    margin: 50px 0px;
+}
+
+.nome {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.nome img {
+    width: 150px;
+    border-radius: 50%;
+
+
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 16px;
+    gap: 20px;
+}
+
+
+.informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+
+
+}
+
+.objetivo h2,
+.for-acad h2 {
+    margin: 20px 0px;
+    font-size: 20px;
+
+
+}
+
+
+.for-acad,
+.objetivo {
+    padding: 64px;
+
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+
+ul {
+    text-align: left;
+}
+
+li {
+    margin-left: 20px;
+    margin: 15px 0px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+img {
+    width: 30px;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 
+.links-contato {
+    background-color: #B5B5B5;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+} */
