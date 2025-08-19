@@ -53,7 +53,11 @@ header h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #02595928;
+    background-color: #0259591c;
+
+    box-shadow: 0px 0px 4px #000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .menu li {
@@ -72,9 +76,19 @@ header h2 {
 
 
 .menu li a:hover {
-    background-color: #02595948;
-    padding: 8px;
     border-radius: 8px;
-    border: 1px solid red;
+    text-shadow: 0px 0px 1px #000000;
+    text-decoration: underline;
+}
 
+
+
+/* BANNER */
+.banner {
+    max-width: 1000px;
+    border-radius: 15px;
+    height: 250px;
+    border: 1px solid red;
+    margin: 20px 0px;
+    overflow: hidden;
 }
