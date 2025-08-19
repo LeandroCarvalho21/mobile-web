@@ -92,3 +92,18 @@ header h2 {
     margin: 20px 0px;
     overflow: hidden;
 }
+
+
+
+/* Content HOME */
+
+.content-box {
+    margin: 20px;
+    border: 1px solid red;
+}
+
+
+.box {
+    border: 1px solid blueviolet;
+    max-width: 300px;
+}
