@@ -9,10 +9,10 @@
 
 
 body {
-    /* background-color: #A0A603;
+    background-color: #A0A603;
     background-color: #025959;
     background-color: #04ADBF;
-    background-color: #04BFBF; */
+    background-color: #04BFBF;
     background-color: #f2e0c9c5;
 }
 
@@ -20,6 +20,14 @@ body {
     max-width: 1064px;
     margin: 0 auto;
 }
+
+
+
+.titleGeneral h1 {
+    padding: 10px 0px;
+    color: #025959;
+}
+
 
 /* criando o Header */
 header {
@@ -87,7 +95,7 @@ header h2 {
     border-radius: 15px;
     height: 250px;
     margin: 20px 0px;
-    border: 1px solid red;
+    
     overflow: hidden;
 }
 
@@ -102,18 +110,19 @@ header h2 {
 .content-box {
     display: flex;
     justify-content: space-around;
-   
-}
 
+}
 
 .box {
     max-width: 300px;
-    border: 1px solid red;
+    border: 1px solid #4681D6;
     text-align: justify;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px 20px 20px 20px;
     box-shadow: 0px 0px 4px #505050;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -128,7 +137,7 @@ header h2 {
 .box img {
     /* max-width: 270px; */
     margin: 10px 0px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #4681D6;
 
 }
 
@@ -147,4 +156,25 @@ header h2 {
 
 .box a:hover {
     text-decoration: underline;
+}
+
+
+
+.promocao {
+    display: flex;
+    justify-content: center;
+
+}
+
+.promocao img {
+
+    max-width: 800px;
+    height: 180px;
+    border-radius: 15px;
+    height: 250px;
+    margin: 20px 0px;
+    
+    /* corta imagem */
+    overflow: hidden;
+
 }
