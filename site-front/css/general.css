@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 
@@ -24,8 +26,6 @@ header {
     background-color: #04BFBF;
     box-shadow: 0px 0px 4px #000;
     border-bottom: 3px solid #025959;
-
-    font-family: Arial, Helvetica, sans-serif;
     height: 130px;
 
     /* Flexbox */
@@ -69,7 +69,6 @@ header h2 {
     font-size: 18px;
     text-decoration: none;
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 18px;
 }
@@ -81,29 +80,71 @@ header h2 {
     text-decoration: underline;
 }
 
-
-
 /* BANNER */
 .banner {
-    max-width: 1000px;
+    text-align: center;
+    /* max-width: 1064px; */
     border-radius: 15px;
     height: 250px;
-    border: 1px solid red;
     margin: 20px 0px;
+    border: 1px solid red;
     overflow: hidden;
 }
 
 
 
-/* Content HOME */
+.banner img {
+    border-radius: 15px;
 
+}
+
+/* Content HOME */
 .content-box {
-    margin: 20px;
-    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+   
 }
 
 
 .box {
-    border: 1px solid blueviolet;
     max-width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 20px 20px 20px;
+    box-shadow: 0px 0px 4px #505050;
+
+}
+
+
+.box p {
+    padding: 10px;
+    color: #0000009f;
+    line-height: 1.5;
+}
+
+
+.box img {
+    /* max-width: 270px; */
+    margin: 10px 0px;
+    border-bottom: 1px solid red;
+
+}
+
+
+
+
+.box a {
+    padding: 0 0 10px 10px;
+    display: block;
+    color: #000;
+
+    /* Negrito */
+    font-weight: bold;
+}
+
+
+.box a:hover {
+    text-decoration: underline;
 }
