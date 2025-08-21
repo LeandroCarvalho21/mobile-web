@@ -218,7 +218,7 @@ header h2 {
     outline: none;
 
     text-align: center;
-    /* padding: 20px; */
+    padding: 10px;
 }
 
 .novidades form {
@@ -238,4 +238,18 @@ header h2 {
     font-weight: bold;
     background: transparent;
 
+}
+
+
+footer {
+    background-color: #000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer p {
+    color: #fff;
 }
