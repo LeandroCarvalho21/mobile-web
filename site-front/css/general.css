@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
@@ -13,7 +12,7 @@ body {
     background-color: #025959;
     background-color: #04ADBF;
     background-color: #04BFBF; */
-    background-color: #f2e0c9c5;
+    background-color: #f2e0c993;
 }
 
 .container {
@@ -72,6 +71,8 @@ header h2 {
 .menu li {
     /*  espaçamento interno */
     padding: 18px;
+    list-style-type: none;
+
 }
 
 .menu li a {
@@ -112,14 +113,16 @@ header h2 {
 .box {
     max-width: 300px;
     border: 1px solid #4681D6;
-    text-align: justify;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px 20px 20px 20px;
     box-shadow: 0px 0px 4px #505050;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    
 }
+
 
 .box p {
     padding: 10px;
@@ -228,6 +231,6 @@ footer p {
 
 
 .contentSobre {
-  
+
     margin-left: 10px;
 }
