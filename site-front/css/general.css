@@ -307,7 +307,10 @@ footer p {
     display: flex;
     align-items: center;
     height: 250px;
-    border-left: 4px solid #04BFBF;
+    border-radius: 50px;
+    border-left: 10px solid #04BFBF;
+    margin-bottom: 30px;
+
 }
 
 .nossa-visao p {
@@ -321,18 +324,35 @@ footer p {
     border: 10px solid #04BFBF;
 }
 
+/* 
 .visão {
     background-color: rgb(80, 226, 43);
-}
+} */
 
 .div_45g {
-    background-color: brown;
+    display: flex;
+    align-items: center;
     height: 150px;
-
-    border-top-left-radius: 300px;
-    /* border-bottom-right-radius: 150px; */
 }
 
+.div_45g p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+
+.destaque-sobre {
+    display: flex;
+    background-color: #025959;
+    height: 350px;
+}
+
+.destaque-sobre img {
+    width: 700px;
+}
 
 /* Página contato */
 .text-contato {
@@ -343,4 +363,46 @@ footer p {
 .text-contato strong {
     color: #4681D6;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+    margin: 20px;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group select {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #04bfbf67;
+
+}
+
+.form-group label {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 600px;
+    height: 30px;
+    outline: none;
+    padding-left: 5px;
+    border: 2px solid #bcbaba;
+    border-radius: 7px;
+
+}
+
+.form-group-sexo {
+
+    display: inline-block;
+    margin-top: 10px;
+
 }
