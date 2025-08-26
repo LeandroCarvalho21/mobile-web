@@ -39,18 +39,18 @@
 
         <form>
             <article class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <label for="nome" class="title">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
             </article>
 
             <article class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email">
+                <label for="email" class="title">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
             </article>
 
             <article class="form-group-sexo">
 
-                <strong>Sexo</strong>
+                <strong class="title">Sexo</strong>
                 <br>
                 <label for="masc">Masculino</label>
                 <input type="radio" name="sexo" id="masc">
@@ -79,7 +79,7 @@
 
             <article>
                 <fieldset>
-                    <legend>Receber email </legend>
+                    <legend class="title">Receber email </legend>
                     <section class="form-group-info">
                         <label for="sim">Sim</label>
                         <input type="checkbox" id="sim">
@@ -88,15 +88,29 @@
             </article>
 
             <article class="form-group-info">
-                <label for="idade">Idade</label>
+                <label for="idade" class="title">Idade</label>
                 <input type="number" id="idade" min="0" max="10" class="form-control-padrao">
             </article>
 
             <article class="form-group-info">
-                <label for="nivel">Nivel de satisfação</label>
-                <input type="range" id="nivel" min="0" max="10" >
+                <label for="nivel" class="title">Nivel de satisfação</label>
+                <input type="range" id="nivel" min="0" max="10">
             </article>
 
+            <article class="form-group-info">
+                <label for="doc" class="title">Importar arquivo</label>
+                <input type="file" id="doc">
+            </article>
+
+            <article class="form-group-info">
+                <label for="descricao" class="title">Descrição</label>
+                <textarea id="descrico" class="comentario" placeholder="Digite seu comentario"></textarea>
+            </article>
+
+
+            <article >
+                <button type="submit" class="btn-enviar">Enviar informações</button>
+            </article>
 
 
 
