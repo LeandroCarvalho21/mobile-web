@@ -346,13 +346,42 @@ footer p {
 
 .destaque-sobre {
     display: flex;
-    background-color: #025959;
-    height: 350px;
+    /* background-color: #025959; */
+    /* height: 350px; */
+    position: relative;
+
+    margin: 100px 0px;
+}
+
+
+.desta-text-sobre-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .destaque-sobre img {
-    width: 700px;
+    width: 900px;
+    border-radius: 15px;
+
 }
+
+.desta-text-sobre-img h2 {
+    color: #fff;
+    font-size: 100px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+}
+
+/* .desta-text-sobre-img p {
+    color: rgb(255, 38, 0);
+    font-size: 25px;
+    text-align: justify;
+} */
 
 /* Página contato */
 .text-contato {
@@ -404,5 +433,26 @@ form {
 
     display: inline-block;
     margin-top: 10px;
+
+}
+
+legend {
+    padding: 10px;
+}
+
+.form-group-info {
+    margin: 20px 0px 20px 20px;
+
+}
+
+.form-control-padrao {
+
+    width: 100%;
+    max-width: 50px;
+    height: 30px;
+    outline: none;
+    padding-left: 5px;
+    border: 2px solid #bcbaba;
+    border-radius: 7px;
 
 }
