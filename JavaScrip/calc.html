@@ -16,12 +16,17 @@
 
         .calc {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* justify-content:center; */
+            align-items: center;
             background-color: rgb(196, 196, 196);
             height: 350px;
-            width: 300px;
+            /* width: 300px; */
             border-radius: 8px;
             border: 1px solid rgb(167, 166, 166);
             box-shadow: 0px 0px 4px rgb(122, 122, 122);
+            padding: 10px;
         }
 
 
@@ -34,8 +39,34 @@
         .resultado {
 
             background-color: aqua;
-            height: 50px;
+            height: 80px;
+            width: 250px;
+
+
+        }
+
+
+        button {
+
             width: 50px;
+            height: 100px;
+            padding: 10px;
+            border: none;
+            box-shadow: 0px 0px 4px red;
+            border-radius: 8px;
+
+        }
+
+
+        .num_botao {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            background-color: blue;
+            width: 100%;
+
+
 
 
         }
@@ -51,12 +82,22 @@
 
             <div class="resultado">
 
-
+                <h5>resultado</h5>
             </div>
 
+            <div class="num_botao">
+                <div class="numeros">
+                    <h6>numeros</h6>
+                </div>
+
+                <div class="operadores"> 
+                    <button onclick="somar()">+</button>
+                    <button onclick="sub()">-</button>
+
+                </div>
+
+            </div>
         </div>
-
-
 
 
 
