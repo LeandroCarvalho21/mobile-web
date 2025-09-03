@@ -2,11 +2,9 @@
 let num1 = 10;
 let num2 = 10;
 
-
 let soma = num1 + num2
 let subtra = num1 - num2
-
-
+let multiplicar = num1 * num2
 
 //Operações
 
@@ -18,7 +16,11 @@ function somar() {
 // função subtrair
 function sub() {
     console.log(subtra);
+}
 
+// função mutiplicar
+function mult() {
+    console.log(subtra);
 }
 
 

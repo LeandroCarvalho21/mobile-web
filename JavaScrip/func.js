@@ -5,7 +5,7 @@ function mostrarNome(nome, idade, email ) {
 }
 
 function pularLinha() {
-    document.write("<br><br><br><br><br><br>")
+    document.write("<br><br><br><br><br><br>");
 }
 
 mostrarNome("Leandro: ",32, " Email: leandrocnovais@gmail.com");
