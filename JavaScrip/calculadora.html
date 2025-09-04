@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            /* text-decoration: none; */
+        }
+
+        header {
+            background-color: aqua;
+
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+
+        .calculadora {
+            background-color: rgba(128, 128, 128, 0.452);
+            width: 300px;
+            height: 350px;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        #resultado {
+            background-color: cornflowerblue;
+            width:200px;
+            height: 50px;
+
+
+        }
+
+
+
+        .calculadora form article button{
+
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Calculadora</h1>
+
+
+        <div class="calculadora">
+            <form>
+
+                <article>
+                    <label for="numero1"> Número 1</label>
+                    <input type="number" id="numero1">
+                </article>
+
+                <article>
+                    <label for="numero2">Número 2</label>
+                    <input type="number" id="numero2">
+                </article>
+
+                <article>
+                    <button>Somar</button>
+                </article>
+
+                <div id="resultado">teste</div>
+
+
+            </form>
+        </div>
+
+        <!-- 
+        <div class="Calculadora">
+            <div class="visor"></div>
+            <div class="num"></div>
+            <div class="operadores"></div>
+        </div>
+
+ -->
+
+
+    </main>
+    <footer></footer>
+
+
+    <script src="./calculadora.js"></script>
+</body>
+
+</html>

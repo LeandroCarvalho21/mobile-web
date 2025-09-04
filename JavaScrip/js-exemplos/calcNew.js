@@ -1,4 +1,6 @@
 //Funções
+
+//somar
 function somar(num1, num2) {
     let resul = num1 + num2
     console.log("somar: ",resul);
@@ -7,7 +9,7 @@ function somar(num1, num2) {
     document.write("<br>")
 }
 
-// imprimir funções
+//chama a função somar
 somar(0, 10);
 somar(10, 10);
 somar(10, 20);
@@ -21,6 +23,7 @@ function sub(sub1, sub2) {
     document.write("<br>")
 }
 
+//chama a função sub
 sub(0, 10);
 sub(10, 10);
 sub(10, 20);
@@ -34,6 +37,7 @@ function mult(mult1, mult2) {
     document.write("<br>")
 }
 
+//chama a função mult
 mult(0, 10);
 mult(10, 10);
 mult(10, 20);
@@ -48,6 +52,7 @@ function div(div1, div2) {
     document.write("<br>")
 }
 
+//chama a função div
 div(0, 10);
 div(10, 10);
 div(10, 20);
