@@ -77,9 +77,10 @@
             color: #191970;
         }
 
-        #resultado {
+        #result {
             color: #fff;
             margin-bottom: 10px;
+            font-size: 45px;
         }
 
         #message {
