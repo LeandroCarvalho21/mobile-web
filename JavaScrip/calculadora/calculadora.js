@@ -6,6 +6,9 @@ const resultado = document.getElementById("resultado");
 //função
 function somar(event) {
     event.preventDefault();
+
+   
+
     if (num1.value == "" && num2.value == "") {
         resultado.innerHTML = "Digite um número"
         return false;
