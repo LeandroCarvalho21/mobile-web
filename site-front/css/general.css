@@ -526,3 +526,14 @@ legend {
 
 
 }
+
+
+
+#emailCliente {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #4681D6;
+    padding: 10px;
+}

@@ -1,4 +1,6 @@
 const form = document.getElementById("newForm");
+const emailCliente = document.querySelector("#emailCliente")
+
 
 
 form.addEventListener("submit", function (event) {
@@ -10,10 +12,20 @@ form.addEventListener("submit", function (event) {
     if (email === "") {
         alert("Digite o seu email");
         return false
-    } else {
-        console.log(email);
-        alert(email);
     }
+
+    //Validação simples: tem @ e .
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Email invalido. tente novamente.");
+        return false
+
+    }
+
+    
+    
+    emailCliente.textContent = email
+    emailCliente.style.display = "block";
+    // alert("Email cadastro com susseso! ✅");
 
     // Limpa o campo
     form.reset();
