@@ -1,8 +1,6 @@
 const form = document.getElementById("newForm");
 const emailCliente = document.querySelector("#emailCliente")
 
-
-
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -18,11 +16,8 @@ form.addEventListener("submit", function (event) {
     if (!email.includes("@") || !email.includes(".")) {
         alert("Email invalido. tente novamente.");
         return false
-
     }
-
-    
-    
+       
     emailCliente.textContent = email
     emailCliente.style.display = "block";
     // alert("Email cadastro com susseso! ✅");

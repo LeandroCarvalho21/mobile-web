@@ -6,7 +6,6 @@
     text-decoration: none;
 }
 
-
 body {
     /* background-color: #A0A603;
     background-color: #025959;
@@ -17,18 +16,17 @@ body {
 
 .container {
     max-width: 1064px;
-    /* height: 100vh; */
-    margin: 0 auto;
+    margin: 1px auto 0px auto;
     background-color: #fff;
+    padding: 20px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-
-
 
 .titleGeneral h1 {
     padding: 10px 0px;
     color: #025959;
 }
-
 
 /* criando o Header */
 header {
@@ -36,7 +34,9 @@ header {
     box-shadow: 0px 0px 4px #000;
     border-bottom: 3px solid #025959;
     height: 130px;
-
+    max-width: 1064px;
+    margin-left: auto;
+    margin-right: auto;
     /* Flexbox */
     display: flex;
     align-items: center;
@@ -51,7 +51,6 @@ header img {
 header h2 {
     font-size: 25px;
     color: white;
-
     /* aumentar a fonte para maiuscula */
     text-transform: uppercase;
 }
@@ -63,7 +62,9 @@ header h2 {
     justify-content: space-around;
     align-items: center;
     background-color: #0259591c;
-
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1064px;
     box-shadow: 0px 0px 4px #000;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -73,7 +74,6 @@ header h2 {
     /*  espaçamento interno */
     padding: 18px;
     list-style-type: none;
-
 }
 
 .menu li a {
@@ -141,7 +141,6 @@ header h2 {
     padding: 0 0 10px 10px;
     display: block;
     color: #000;
-
     /* Negrito */
     font-weight: bold;
 }
@@ -198,6 +197,13 @@ header h2 {
 
 .novidades form {
     width: 100%;
+
+}
+
+.alinharButton {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .novidades form button {
@@ -205,10 +211,16 @@ header h2 {
     border-radius: 5px;
     padding: 10px;
     color: #000000;
-    font-weight: bold;
-    background: transparent;
-    box-shadow: 0px 0px 4px #000;
+    font-weight: 500;
+    background: rgb(227, 227, 227);
+    box-shadow: 0px 0px 1px #4a4a4a;
     border: none;
+
+}
+
+.novidades form button:hover {
+    box-shadow: 0px 0px 4px #4c4c4c;
+    color: #313131;
 }
 
 footer {
@@ -217,35 +229,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 footer p {
     color: #969696;
 }
 
-
 /* Pagina Sobre */
 .spaceSobre,
 .spaceContato {
     margin: 20px 0px 20px 0;
     margin: 20px auto;
-    /* background-color: #4681D6; */
-    max-width: 900px;
-
+    max-width: 1000px;
 }
 
-
 .contentSobre {
-
     margin-left: 10px;
 }
 
-
 .containerLista {
-
-
-
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -264,22 +266,15 @@ footer p {
 
 }
 
-
 .conteudo-sobre-st {
-
     padding: 16px;
     max-width: 600px;
-
-
-
 }
 
 .conteudo-sobre-st p {
-
     text-align: justify;
     line-height: 1.5;
     color: #6b6969;
-
 }
 
 .diferencial {
@@ -291,14 +286,11 @@ footer p {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
-
-
 }
 
 .diferencial ul li {
     margin: 10px 0px 10px 45px;
     color: #6b6969;
-
 }
 
 .diferencial h3 {
@@ -312,7 +304,6 @@ footer p {
     border-radius: 50px;
     border-left: 10px solid #04BFBF;
     margin-bottom: 30px;
-
 }
 
 .nossa-visao p {
@@ -325,11 +316,6 @@ footer p {
     border-radius: 100%;
     border: 10px solid #04BFBF;
 }
-
-/* 
-.visão {
-    background-color: rgb(80, 226, 43);
-} */
 
 .div_45g {
     display: flex;
@@ -344,17 +330,11 @@ footer p {
     line-height: 1.5;
 }
 
-
-
 .destaque-sobre {
     display: flex;
-    /* background-color: #025959; */
-    /* height: 350px; */
     position: relative;
-
     margin: 100px 0px;
 }
-
 
 .desta-text-sobre-img {
     position: absolute;
@@ -362,21 +342,19 @@ footer p {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    /* height: 100%; */
     width: 100%;
     margin-top: 50px;
-
 }
 
 .destaque-sobre img {
     width: 900px;
     border-radius: 15px;
+    margin: 0px auto;
 }
 
 .desta-text-sobre-img h2 {
     color: #fff;
     font-size: 100px;
-    /* margin-bottom: 150px; */
     margin-left: 200px;
     text-shadow: 0px 0px 4px #0000009d;
 }
@@ -396,7 +374,6 @@ footer p {
     text-shadow: 0px 0px 4px #0000009d;
 }
 
-
 .desta-text-sobre-img a {
     background-color: #fffb00;
     font-size: 15px;
@@ -410,16 +387,7 @@ footer p {
 
 .desta-text-sobre-img a:hover {
     box-shadow: 0px 0px 5px #00000063;
-
-
-
 }
-
-/* .desta-text-sobre-img p {
-    color: rgb(255, 38, 0);
-    font-size: 25px;
-    text-align: justify;
-} */
 
 /* Página contato */
 .text-contato {
@@ -447,7 +415,6 @@ form {
     height: 30px;
     border-radius: 8px;
     background-color: #04bfbf67;
-
 }
 
 .form-group label {
@@ -464,14 +431,11 @@ form {
     padding-left: 5px;
     border: 2px solid #bcbaba;
     border-radius: 7px;
-
 }
 
 .form-group-sexo {
-
     display: inline-block;
     margin-top: 10px;
-
 }
 
 legend {
@@ -480,11 +444,9 @@ legend {
 
 .form-group-info {
     margin: 20px 0px 20px 20px;
-
 }
 
 .form-control-padrao {
-
     width: 100%;
     max-width: 50px;
     height: 30px;
@@ -512,7 +474,6 @@ legend {
 .title {
     font-weight: bold;
     color: #025959;
-
 }
 
 .btn-enviar {
@@ -524,16 +485,13 @@ legend {
     border: 0;
     cursor: pointer;
 
-
 }
-
-
 
 #emailCliente {
     display: none;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 20px;
-    background-color: #4681D6;
+    margin-top: 10px;
     padding: 10px;
+    text-decoration: underline;
 }
