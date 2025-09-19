@@ -1,9 +1,10 @@
 import { Fragment } from "react";
+import "./Header.css";
 
 const Header = () => {
 
     return (
-        <Fragment>
+        <div>
             <header>
                 <nav>
                     <ul>
@@ -13,7 +14,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </header>
-        </Fragment>
+        </div>
     )
 }
 

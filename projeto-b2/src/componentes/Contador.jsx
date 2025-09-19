@@ -1,26 +1,33 @@
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
+import "./contador.css";
 
 //função arrow function
 const Contador = () => {
+    //Inicializa o estado com valor 0
+    const [count, setCount] = useState(0);
 
     const aumentar = () => {
-        alert("Aumentar")
+
+        setCount(count + 1);
+
     }
 
     const diminuir = () => {
-        alert("Diminuir")
+
+        setCount(count - 1);
+
+
     }
 
-
     return (
-        <Fragment>
-            <h1>Contador</h1>
+        <main className="container">
+            <h1>{count}</h1>
             <section>
                 <h2>Resultado</h2>
-                <button onClick={aumentar} style={{marginRight: "10px", color:"red", padding:"5px",}}>Aumentar</button>
-                <button onClick={diminuir}>Diminuir</button>
+                <button onClick={aumentar} style={{ marginRight: "10px", color: "red", padding: "5px", }}>Aumentar</button>
+                <button onClick={diminuir} style={{ marginRight: "10px", color: "red", padding: "5px", }}> Diminuir</button>
             </section>
-        </Fragment>
+        </main>
     )
 }
 
