@@ -1,95 +1,132 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        h1 {
-            font-size: 80px;
-            text-align: center;
-            text-shadow: 0px 4px 2px #767676;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 100px;
-        }
+header {
+    border-bottom: 2px solid rgba(255, 0, 0, 0.282);
+    background-color: #5e5e5e6f;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        body {
-            background: #483D8B;
-        }
+header nav ul {
+    display: flex;
+    padding: 10px;
+}
 
-        .container {
-            /*Largura*/
-            width: 100%;
-            max-width: 450px;
-            /*Borda*/
-            border: 2px solid white;
-            /* Borda arrendondada */
-            border-radius: 5px;
-            /* Centralizar minha tela*/
-            margin: 40px auto;
-            
 
-            box-shadow: 0px 0px 8px #000;
-        }
 
-        .container form {
-            /*Flexbox*/
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 200px;
-        }
+header nav ul li {
+    margin: 0px 25px;
+    list-style-type: none;
 
-        .form-control input {
-            /*Espaçamento entre os elementos*/
-            margin-top: 15px;
-            margin-bottom: 15px;
-            /*Efeito colateral do navegador*/
-            outline: none;
-            /*Espaçamento dentro do elemento*/
-            padding: 5px;
-        }
 
-        .form-control label {
-            /* Espaçamento entre os elementos */
-            margin-top: 15px;
-            color: #fff;
-            display: block;
-        }
+}
 
-        #verifica-nota {
-            /* Cor do fundo */
-            background: #191970;
-            /* Borda do Botão */
-            border: 1px solid white;
-            /*Cor de texto */
-            color: #fff;
-            /*Espaçamento dentro do elemento */
-            padding: 5px;
-            /* Espaçamento fora do elemento */
-            margin-bottom: 10px;
-            /* Cursor mãozinha */
-            cursor: pointer;
-            transition: all 0.9s;
-        }
+header nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 22px;
+}
 
-        #verifica-nota:hover {
-            background-color: rgb(232, 229, 229);
-            color: #191970;
-        }
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #000;
 
-        #result {
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 45px;
-        }
+}
 
-        #message {
-            display: none;
-        }
+h1 {
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 0px 4px 2px #767676;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-top: 100px; */
+}
 
-        #message span {
-            color: red;
-            padding-bottom: 10px;
-            display: block;
-            /* #message */
-        }
+body {
+    /* background: #483D8B; */
+    background-color: #dddddd;
+}
+
+.container {
+    /*Largura*/
+    width: 100%;
+    max-width: 450px;
+    /*Borda*/
+    border: 2px solid white;
+    /* Borda arrendondada */
+    border-radius: 5px;
+    /* Centralizar minha tela*/
+    margin: 40px auto;
+
+
+    box-shadow: 0px 0px 8px #000;
+}
+
+.container form {
+    /*Flexbox*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+.form-control input {
+    /*Espaçamento entre os elementos*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*Efeito colateral do navegador*/
+    outline: none;
+    /*Espaçamento dentro do elemento*/
+    padding: 5px;
+}
+
+.form-control label {
+    /* Espaçamento entre os elementos */
+    margin-top: 15px;
+    color: #000;
+    display: block;
+}
+
+#verifica-nota {
+    /* Cor do fundo */
+    background: #191970;
+    /* Borda do Botão */
+    border: 1px solid white;
+    /*Cor de texto */
+    color: #fff;
+    /*Espaçamento dentro do elemento */
+    padding: 5px;
+    /* Espaçamento fora do elemento */
+    margin-bottom: 10px;
+    /* Cursor mãozinha */
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+#verifica-nota:hover {
+    background-color: rgb(232, 229, 229);
+    color: #000;
+}
+
+#result {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+#message {
+    display: none;
+}
+
+#message span {
+    color: red;
+    padding-bottom: 10px;
+    display: block;
+    /* #message */
+}

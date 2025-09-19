@@ -12,8 +12,45 @@
             box-sizing: border-box;
         }
 
+        header {
+            border-bottom: 2px solid rgba(255, 0, 0, 0.282);
+            background-color: #5e5e5e6f;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header nav ul {
+            display: flex;
+            padding: 10px;
+        }
+
+
+
+        header nav ul li {
+            margin: 0px 25px;
+            list-style-type: none;
+
+
+        }
+
+        header nav ul li a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #3b3b3b;
+            font-size: 22px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+            color: #000;
+
+        }
+
+
         main {
-            background-color: rgb(221, 221, 221);
+            background-color: #dddddd;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -90,7 +127,14 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./niver.html">Aniversario do Rodrigo</a></li>
+                <li><a href="./nota/nota.html">Nota</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <div class="niverRodrigo">
