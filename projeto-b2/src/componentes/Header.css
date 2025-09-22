@@ -1,6 +1,14 @@
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: aquamarine;
     height: 50px;
+
+}
+
+header nav {
+    width: 100%;
 
 }
 
@@ -8,6 +16,14 @@ header ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: blanchedalmond;
+
 }
 
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+}
