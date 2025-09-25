@@ -1,5 +1,5 @@
 import Header from "./componentes/Header";
-import Banner from "./componentes/banner";
+import Banner from "./componentes/Banner";
 import ImgCard from "./componentes/ImgCard";
 import Button from "./componentes/Button";
 import "./App.css";
