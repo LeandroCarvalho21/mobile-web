@@ -1,10 +1,21 @@
-import React from 'react';
-import  "./imgCard.css";
 
-export default function ImgCard() {
-  return (
-    <div className='image-card'>
-      Olá Img - Popeto
-    </div>
-  )
+import img1 from "../../assets/img-1.jpg";
+import "./imgCard.css";
+
+
+export default function ImgCard(props) {
+    console.log(props)
+    return (
+        <div className="image-card">
+            <img src={img1} alt={props.caption || 'Imagem Padrão '} />
+
+
+            <p className="image-card-caption">
+                {props.caption}
+            </p>
+
+        </div>
+
+
+    )
 }

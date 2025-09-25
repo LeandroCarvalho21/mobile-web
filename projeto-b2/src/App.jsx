@@ -1,6 +1,7 @@
 import Header from "./componentes/Header";
 import Banner from "./componentes/banner";
 import ImgCard from "./componentes/ImgCard";
+import Button from "./componentes/Button";
 import "./App.css";
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
         <p>Aqui você encontra as melhores ofertas</p>
       </Banner>
 
-      <ImgCard></ImgCard>
+      <ImgCard caption="Uma imagem interessante" />
+
+      <Button text="Clique aqui" />
+
 
     </main>
   )
