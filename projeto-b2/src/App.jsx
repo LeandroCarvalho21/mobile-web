@@ -1,13 +1,21 @@
-import Contador from "./componentes/Contador";
-import Header from "./componentes/header";
+import Header from "./componentes/Header";
+import Banner from "./componentes/banner";
+import ImgCard from "./componentes/ImgCard";
+import "./App.css";
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <Contador />
-    </>
+    <main className="container">
+      <Header title="Meu site" />
+
+      <Banner>
+        <h1>Bem vindo ao meu site </h1>
+        <p>Aqui você encontra as melhores ofertas</p>
+      </Banner>
+
+      <ImgCard></ImgCard>
+
+    </main>
   )
 }
 
