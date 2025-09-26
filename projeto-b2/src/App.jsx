@@ -27,18 +27,21 @@ function App() {
         caption="Uma imagem interessante"
         imagem={img1}
         texto="lorem ipsum Popeto"
+        link= "https://www.terra.com.br/"
       />
 
       <ImgCard
         caption="Imagem 2"
         imagem={img2}
         texto="Popeto"
+        link= "https://www.uol.com.br/"
       />
 
       <ImgCard
         caption="Imagem 3"
         imagem={img3}
         texto="Popeto Popeto Bangu"
+        link= "https://sp.senai.br/cursos/cursos-livres/tecnologia-da-informacao-e-informatica?modalidade=1&regiao=2&cidadesp=barueri,jandira&gratuito=1&pag=1"
       />
 
       <Button text="Clique aqui" onclick={headleClick} />
