@@ -11,10 +11,11 @@ export default function Prime() {
             </View>
 
             <View style={estilos.cursosContent}>
-                <Text style={estilos.textCurso}>HTML Completo</Text>
-                <Text style={estilos.textCurso}>Informatica Básica</Text>
-                <Text style={estilos.textCurso}>Excel Básico</Text>
-                <Text style={estilos.textCurso}>Excel Avançado</Text>
+                <Text style={estilos.textCurso}>Web designer - Front-End</Text>
+                <Text style={estilos.textCurso}>Informática Básica</Text>
+                <Text style={estilos.textCurso}>Cibersegurança na Nuvem</Text>
+                <Text style={estilos.textCurso}>Desenvolvimento em JavaScript</Text>
+                <Text style={estilos.textCurso}>Microsoft Power BI</Text>
             </View>
 
             <ListaCursos></ListaCursos>
