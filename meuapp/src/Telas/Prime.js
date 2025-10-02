@@ -1,5 +1,6 @@
 import { View, StyleSheet, Text } from "react-native";
 import ListaCursos from "../Componentes/ListaCursos";
+import ListaAlunos from "../Componentes/ListaAlunos";
 
 export default function Prime() {
     return (
@@ -19,7 +20,8 @@ export default function Prime() {
             </View>
 
             <ListaCursos></ListaCursos>
-
+            
+            <ListaAlunos></ListaAlunos>
 
 
         </>
@@ -61,7 +63,11 @@ const estilos = StyleSheet.create({
         backgroundColor: "rgba(98, 98, 98, 1)",
         borderRadius: 8,
         padding: 10,
-        textAlign: "center",
+        textAlign: "left",
+        elevation: 3,
+        borderWidth: 1,
+        borderColor:"#fff",
+        
     },
 
 });

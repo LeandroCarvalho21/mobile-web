@@ -1,8 +1,5 @@
 import { Text, View, StyleSheet, FlatList } from "react-native";
 
-
-
-
 export default function ListaCursos() {
 
     const data = ["React NAtive", "Mongo DB", "Express", "Node.js","C#"];
