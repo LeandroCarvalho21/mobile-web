@@ -36,7 +36,7 @@ const estilos = StyleSheet.create({
         marginTop: 20,
         padding: 20,
         backgroundColor: "red",
-        margin: 15,
+        margin: 16,
         borderRadius: 8,
 
     },
