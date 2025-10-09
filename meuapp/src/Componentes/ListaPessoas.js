@@ -39,40 +39,42 @@ export default function ListaPessoas() {
     )
 }
 
-
 const estilos = StyleSheet.create({
 
     container: {
-        padding: 20,
+        gap: 10,
         margin: 16,
+        borderWidth: 2,
+        borderRadius: 8,
     },
 
     titulo: {
         fontSize: 22,
         fontWeight: "bold",
-        marginBottom: 15,
         textAlign: "center",
+        backgroundColor: "#a1a1a1ff",
+        padding: 16,
+        color: "#fff",
+        textShadowColor: "#000",
+        textShadowRadius: 8,
+        borderBottomLeftRadius: 8,
+        borderBottomRightRadius: 8,
     },
 
     card: {
         margin: 16,
-        padding: 32,
+        padding: 16,
         backgroundColor: "#bb2a2aff",
         borderRadius: 8,
         color: "#fff",
-        borderWidth: 2,
-
-
+        borderWidth: 3,
+        elevation: 4,
+        borderColor: "#a1a1a1ff",
     },
+
     tituloPessoas: {
         margin: 4,
         color: "#fff",
-        fontSize:18,
+        fontSize: 18,
     },
-
-
-
-
-
-
 })
