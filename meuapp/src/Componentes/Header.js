@@ -16,21 +16,15 @@ const estilos = StyleSheet.create({
         width: "100%",
         backgroundColor: "#d7d7de",
         height: 120,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        alignContent: "center",
+        borderBottomWidth: 2,
+
     },
 
     TituloHeader: {
-        // textAlign: "center",
+        textAlign: "center",
         fontSize: 30,
         color: "#fd3f00bd",
         fontWeight: "bold",
-        height:"100%",
-        
-
-
-
+        paddingTop:20,
     }
 })
