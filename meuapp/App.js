@@ -5,10 +5,7 @@ export default function App() {
   return (
     <>
       <ScrollView>
-
         <Prime />
-        
-        
       </ScrollView>
     </>
   );

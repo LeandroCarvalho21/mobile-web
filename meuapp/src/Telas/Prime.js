@@ -7,7 +7,7 @@ export default function Prime() {
     return (
         <>
             <View style={estilos.topo}>
-                <Text style={estilos.tituloHeader}>Cursos SENAI</Text>
+                <Text style={estilos.tituloHeader}>Cursos SENAI - Nova branch</Text>
             </View>
 
             <View>
@@ -21,11 +21,8 @@ export default function Prime() {
                 <Text style={estilos.textCurso}>Desenvolvimento em JavaScript</Text>
                 <Text style={estilos.textCurso}>Microsoft Power BI</Text>
             </View>
-
             <ListaCursos></ListaCursos>
-
             <ListaAlunos></ListaAlunos>
-
         </>
     )
 }
