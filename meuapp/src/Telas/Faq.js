@@ -36,8 +36,13 @@ const estilos = StyleSheet.create({
     textAlign: "center",
     fontSize: 29,
     fontWeight: "bold",
+    backgroundColor: "#9e9d9d65",
+    padding: 30,
+    borderBottomLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderWidth: 1,
   },
-
+  
   Duvidas: {
     padding: 20,
     textDecorationLine: "underline",
