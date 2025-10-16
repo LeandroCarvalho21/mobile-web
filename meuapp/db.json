@@ -1,0 +1,32 @@
+{
+    "contatos": [
+        {
+            "id": "1",
+            "nome": "João Silva",
+            "telefone": "11955775423"
+        },
+        {
+            "id": "2",
+            "nome": "Leandro Carvalho",
+            "telefone": "11955775857"
+        },
+        {
+            "id": "3",
+            "nome": "Bernardo Carvalho",
+            "telefone": "11944547585"
+        }
+    ],
+    "faq": [
+        {
+            "id": "1",
+            "pergunta": "O que é JSON Server",
+            "resposta": "JSON server é uma ferramenta que permite"
+        },
+        {
+            "id": "2",
+            "pergunta": "Data de nascimento",
+            "resposta": "19/02/1993"
+        }
+    ]
+   
+}

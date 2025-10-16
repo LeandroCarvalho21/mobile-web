@@ -42,7 +42,7 @@ const estilos = StyleSheet.create({
     borderTopRightRadius: 20,
     borderWidth: 1,
   },
-  
+
   Duvidas: {
     padding: 20,
     textDecorationLine: "underline",

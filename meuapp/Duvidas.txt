@@ -1,0 +1,3 @@
+Iniciar o Json-server
+
+npx json-server --watch db.json
