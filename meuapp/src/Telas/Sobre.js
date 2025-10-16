@@ -11,6 +11,7 @@ export default function Sobre() {
     desenvolvedor: "Leandro Carvalho",
   }
 
+
   return (
     <ScrollView >
       <View style={estilos.container}>

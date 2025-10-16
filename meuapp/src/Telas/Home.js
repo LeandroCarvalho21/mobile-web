@@ -5,6 +5,7 @@ import Card from '../Componentes/Card'
 
 export default function Home() {
     const navigation = useNavigation();
+    
     return (
         <View>
             <Card
@@ -19,6 +20,15 @@ export default function Home() {
                 textButton="Ir para Faq"
                 onPress={() => navigation.navigate("Faq")}
             />
+
+            <Card
+                title="Lista Contatos"
+                content="Lista de contatos cadastrados"
+                textButton="Ir para Lista"
+                onPress={() => navigation.navigate("ListaContatos")}
+            />
+
+
         </View>
     )
 }
