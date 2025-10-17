@@ -1,3 +1,9 @@
-Iniciar o Json-server
+iniciar o projeto 
+npx expo start 
 
+--------------------------------
+
+Iniciar o Json-server
 npx json-server --watch db.json
+
+
