@@ -67,5 +67,3 @@ const estilos = StyleSheet.create({
         alignItems: "center",
     }
 })
-
-
