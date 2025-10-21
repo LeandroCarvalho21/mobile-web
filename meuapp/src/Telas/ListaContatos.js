@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, Button, Alert } from 'react-native'
 import axios from 'axios';
 
 
@@ -31,6 +31,12 @@ export default function ListaContatos() {
                     <View key={index} style={estilos.card}>
                         <Text style={estilos.contato}>Nome: {contato.nome}</Text>
                         <Text style={estilos.contato}>Telefone: {contato.telefone}</Text>
+                       
+                       
+                        <Button
+                            title='Excluir'
+                            onPress={() => Alert.alert('Aviso', 'Você clicou no botão')}
+                        />
                     </View>
                 ))
 
