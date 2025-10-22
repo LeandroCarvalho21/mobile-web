@@ -28,6 +28,13 @@ export default function Home() {
                 onPress={() => navigation.navigate("ListaContatos")}
             />
 
+            <Card
+                title="Cadastro"
+                content="Cadastrar lista"
+                textButton="Cadastro"
+                onPress={() => navigation.navigate("Cadastro")}
+            />
+ 
 
         </View>
     )

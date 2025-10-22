@@ -32,22 +32,7 @@ export default function ListaContatos() {
             });
     }
 
-    // função para adicionar um novo contato
-    const addContato = (telefone) => {
-        axios
-            .put(`http://10.0.2.2:3000/contatos/${telefone}`)
-            .then(() => {
-                //adicionar novo contato
-                setContatos(contatos.filter((contato) => contato.telefone == telefone))
-
-                Alert.alert('Novo contato adicionado')
-            })
-            .catch((error) => {
-                console.log("Erro, não foi possivel adicionar novo contato", error)
-                Alert.alert("Erro, não foi possivel cadastrar um novo contato")
-            })
-    }
-
+   
     // Use o useEffect para buscar dados
     useEffect(() => {
         listaContatos();
@@ -59,12 +44,6 @@ export default function ListaContatos() {
             <View style={estilos.container}>
                 <Text style={estilos.titulo}>Contatos</Text>
 
-                <View>
-                    <Button
-                        title='Adicionar novo contato'
-                        onPress={() => addContato(contato.telefone)}
-                    />
-                </View>
 
                 {contatos.length > 0 ? (
                     contatos.map((contato, index) => (
@@ -72,7 +51,6 @@ export default function ListaContatos() {
                         <View key={index} style={estilos.card}>
                             <Text style={estilos.contato}>Nome: {contato.nome}</Text>
                             <Text style={estilos.contato}>Telefone: {contato.telefone}</Text>
-
 
                             <Button
                                 title='Excluir'
