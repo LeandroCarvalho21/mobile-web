@@ -32,7 +32,7 @@ export default function ListaContatos() {
             });
     }
 
-   
+
     // Use o useEffect para buscar dados
     useEffect(() => {
         listaContatos();
@@ -44,14 +44,11 @@ export default function ListaContatos() {
             <View style={estilos.container}>
                 <Text style={estilos.titulo}>Contatos</Text>
 
-
                 {contatos.length > 0 ? (
                     contatos.map((contato, index) => (
-
                         <View key={index} style={estilos.card}>
                             <Text style={estilos.contato}>Nome: {contato.nome}</Text>
                             <Text style={estilos.contato}>Telefone: {contato.telefone}</Text>
-
                             <Button
                                 title='Excluir'
                                 onPress={() => deleteContato(contato.id)}

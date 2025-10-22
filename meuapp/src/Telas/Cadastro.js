@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Button, Text, TextInput, View, StyleSheet, Alert } from 'react-native'
-import Axios from 'axios';
 import axios from 'axios';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Cadastro() {
+    const navigation = useNavigation();
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState("");
 
@@ -15,7 +16,16 @@ export default function Cadastro() {
         const novoContato = { nome, telefone }
         axios
             .post(`http://10.0.2.2:3000/contatos/`, novoContato)
+            .then((resposta) => {
+                if (resposta.status === 201) {
+                    Alert.alert("Sucesso, contato adicionado")
+                    setNome("")
+                    setTelefone("")
 
+                } else {
+                    Alert.alert("Erro, falha ao adicionar contato")
+                }
+            })
 
     }
 
@@ -26,7 +36,7 @@ export default function Cadastro() {
                 <TextInput
                     style={estilo.input}
                     value={nome}
-                    onChange={setNome}
+                    onChangeText={setNome}
                     placeholder="Digite seu nome "
                 />
             </View>
@@ -36,7 +46,9 @@ export default function Cadastro() {
                 <TextInput
                     style={estilo.input}
                     value={telefone}
-                    onChange={setTelefone}
+                    onChangeText={(texto) => setTelefone(texto.replace(/[^0-9]/g, ''))}
+                    keyboardType="numeric"
+                    maxLength={11}
                     placeholder="Digite o telefone"
                 />
 
@@ -44,7 +56,10 @@ export default function Cadastro() {
 
             <Button
                 title='Cadastrar'
-                onPress={enviarContato}
+                onPress={() => (
+                    navigation.navigate("ListaContatos")
+
+                )}
             />
         </View>
     )
