@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Text, View, StyleSheet, Button, Alert, ScrollView } from 'react-native'
+import { Text, View, StyleSheet, Button, Alert, ScrollView, TouchableOpacity, Image } from 'react-native'
 import axios, { Axios } from 'axios';
+import lixeira from "../../assets/lixeira.png"
 
 export default function ListaContatos() {
     const [contatos, setContatos] = useState([]);
@@ -49,10 +50,19 @@ export default function ListaContatos() {
                         <View key={index} style={estilos.card}>
                             <Text style={estilos.contato}>Nome: {contato.nome}</Text>
                             <Text style={estilos.contato}>Telefone: {contato.telefone}</Text>
-                            <Button
+                            {/* <Button
                                 title='Excluir'
                                 onPress={() => deleteContato(contato.id)}
-                            />
+                            /> */}
+
+                            <TouchableOpacity onPress={() => deleteContato(contato.id)}>
+                                <View style={estilos.lixeiraView}>
+                                    <Image
+                                        source={lixeira}
+                                        style={{ width: 15, height: 25, padding: 4, }}
+                                    />
+                                </View>
+                            </TouchableOpacity>
                         </View>
                     ))
 
@@ -83,6 +93,9 @@ const estilos = StyleSheet.create({
         borderRadius: 4,
         width: 300,
         elevation: 10,
+        alignItems: "center",
+        gap: 8,
+
     },
 
     contato: {
@@ -91,5 +104,6 @@ const estilos = StyleSheet.create({
 
     container: {
         alignItems: "center",
-    }
+    },
+
 })

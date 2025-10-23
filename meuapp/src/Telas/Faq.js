@@ -126,7 +126,6 @@ const estilos = StyleSheet.create({
     borderBottomRightRadius: 10,
     borderLeftWidth: 8,
     borderColor: "#9e9e9eff",
-    color: "#3e3e3eff",
-
+    
   }
 })

@@ -30,7 +30,7 @@ export default function Home() {
 
             <Card
                 title="Cadastro"
-                content="Cadastrar lista"
+                content="Cadastrar novo contato"
                 textButton="Cadastro"
                 onPress={() => navigation.navigate("Cadastro")}
             />

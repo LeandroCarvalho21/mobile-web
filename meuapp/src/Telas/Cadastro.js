@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Button, Text, TextInput, View, StyleSheet, Alert } from 'react-native'
+import { useState } from 'react'
+import { Text, TextInput, View, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
 
@@ -29,14 +29,21 @@ export default function Cadastro() {
 
     }
 
+    //Remove números e caracteres especiais, mantém letras, espaços e acentos
+    const limitarParaTexto = (texto) => {
+        return texto.replace(/[^a-zA-ZÀ-ÿ\u00C0-\u00FF\s]/g, '');
+    };
+
     return (
         <View style={estilo.container}>
+
             <View style={estilo.cardNome}>
                 <Text style={estilo.label}>Nome:</Text>
                 <TextInput
                     style={estilo.input}
                     value={nome}
-                    onChangeText={setNome}
+                    onChangeText={(text) => setNome(limitarParaTexto(text))}
+                    maxLength={50}
                     placeholder="Digite seu nome "
                 />
             </View>
@@ -51,16 +58,15 @@ export default function Cadastro() {
                     maxLength={11}
                     placeholder="Digite o telefone"
                 />
-
             </View>
 
-            <Button
-                title='Cadastrar'
-                onPress={() => (
-                    navigation.navigate("ListaContatos")
+            <TouchableOpacity onPress={() => (enviarContato(),
+                navigation.navigate("ListaContatos")
+            )}
+                style={estilo.button}>
+                <Text style={estilo.textButton}>Clique Aqui</Text>
+            </TouchableOpacity>
 
-                )}
-            />
         </View>
     )
 }
@@ -86,13 +92,24 @@ const estilo = StyleSheet.create({
     },
 
     input: {
-        borderWidth: 1,
+        borderWidth: 2,
         borderColor: "#ccc",
         padding: 10,
         marginBottom: 20,
-        borderRadius: 5,
+        borderRadius: 8,
         backgroundColor: "#fff",
         width: "100%",
+    },
 
+    button: {
+        backgroundColor: "#b9b8b8ff",
+        padding: 10,
+        borderRadius: 8,
+        alignItems: "center",
+    },
+
+    textButton: {
+        fontSize: 16,
+        fontWeight: "bold",
     }
 })
