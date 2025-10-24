@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { Text, View, StyleSheet, Button, Alert, ScrollView, TouchableOpacity, Image } from 'react-native'
 import axios, { Axios } from 'axios';
 import lixeira from "../../assets/lixeira.png"
+import editar from "../../assets/editar.png"
+import { useNavigation } from '@react-navigation/native';
+
 
 export default function ListaContatos() {
     const [contatos, setContatos] = useState([]);
+    const navigation = useNavigation();
 
     // Funçaõ para buscar contatos do servidor
     const listaContatos = () => {
@@ -33,7 +37,6 @@ export default function ListaContatos() {
             });
     }
 
-
     // Use o useEffect para buscar dados
     useEffect(() => {
         listaContatos();
@@ -55,14 +58,26 @@ export default function ListaContatos() {
                                 onPress={() => deleteContato(contato.id)}
                             /> */}
 
-                            <TouchableOpacity onPress={() => deleteContato(contato.id)}>
-                                <View style={estilos.lixeiraView}>
-                                    <Image
-                                        source={lixeira}
-                                        style={{ width: 15, height: 25, padding: 4, }}
-                                    />
-                                </View>
-                            </TouchableOpacity>
+                            <View style={estilos.editarExcuir}> 
+                                <TouchableOpacity onPress={() => deleteContato(contato.id)}>
+                                    <View style={estilos.lixeiraView}>
+                                        <Image
+                                            source={lixeira}
+                                            style={{ width: 15, height: 25, padding: 4, }}
+                                        />
+                                    </View>
+                                </TouchableOpacity>
+
+                                <TouchableOpacity onPress={() => navigation.navigate("Alterar")
+                                }>
+                                    <View style={estilos.lixeiraView}>
+                                        <Image
+                                            source={editar}
+                                            style={{ width: 25, height: 25, padding: 4, }}
+                                        />
+                                    </View>
+                                </TouchableOpacity>
+                            </View>
                         </View>
                     ))
 
@@ -70,11 +85,15 @@ export default function ListaContatos() {
                     <Text> Nenhum contato disponivel </Text>
                 )}
             </View>
-        </ScrollView>
+        </ScrollView >
     )
 }
 
 const estilos = StyleSheet.create({
+    container: {
+        alignItems: "center",
+    },
+
     titulo: {
         fontSize: 25,
         textAlign: "center",
@@ -102,8 +121,9 @@ const estilos = StyleSheet.create({
         textAlign: "center",
     },
 
-    container: {
-        alignItems: "center",
-    },
-
+    editarExcuir: {
+        flexDirection: "row",
+        gap:50,
+        
+    }
 })

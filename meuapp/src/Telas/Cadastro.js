@@ -42,7 +42,7 @@ export default function Cadastro() {
                 <TextInput
                     style={estilo.input}
                     value={nome}
-                    onChangeText={(text) => setNome(limitarParaTexto(text))}
+                    onChangeText={(text) => setNome(limitarParaTexto(text.trimStart()))}
                     maxLength={50}
                     placeholder="Digite seu nome "
                 />
@@ -74,7 +74,11 @@ export default function Cadastro() {
 const estilo = StyleSheet.create({
     container: {
         padding: 20,
+        height: "80%",
+        justifyContent: "center",
+        margin: 8,
     },
+
 
     cardNome: {
         alignItems: "center",
